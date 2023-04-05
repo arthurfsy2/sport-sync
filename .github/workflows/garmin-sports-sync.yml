@@ -22,6 +22,9 @@ env:
   ## 通知推送配置
   # 企业微信机器人
   QYWX_KEY:  ${{ secrets.QYWX_KEY }}
+
+  # server酱
+  PUSH_KEY:  ${{ secrets.PUSH_KEY }}
   
   # 叮叮机器人
   DD_BOT_SECRET:  ${{ secrets.DD_BOT_SECRET }}
