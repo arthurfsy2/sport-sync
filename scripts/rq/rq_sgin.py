@@ -59,7 +59,7 @@ class RqSgin:
             else:
                 ## 命令行输出签到信息
                 print(result)
-            
+                notify.send(result)
             '''
                     feature:
                         未来会新增各种信息推送如 Email WebHook(企业微信、飞书等等)、Bark 等
