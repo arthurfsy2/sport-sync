@@ -60,7 +60,7 @@ class RqSgin:
             else:
                 ## 命令行输出签到信息
                 print(result)
-                notify.send("RQ签到结果",message)
+                notify.send("RQ签到任务", "今日已签到！")
             '''
                     feature:
                         未来会新增各种信息推送如 Email WebHook(企业微信、飞书等等)、Bark 等
