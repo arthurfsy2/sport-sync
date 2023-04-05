@@ -205,7 +205,7 @@ class GarminConnect:
                 notify.send(titile,message)
             elif res.status_code == 409 and result_json.get("detailedImportResult").get("failures")[0].get('messages')[0].get('content'):    
                 message =  "重复上传运动数据\n运动数据ID为：%s\n运动数据名称为：%s\n运动数据类型为：%s\n运动开始时间：%s" % (str(activity_id), activityName,activityType,startTimeLocal)      
-                notify.send(titile,message)
+           #     notify.send(titile,message)
                 flag = False
         except Exception as e:
             message =  "上传运动失败：%s\n运动数据ID为：%s\n运动数据名称为：%s\n运动数据类型为：%s\n运动开始时间：%s失败原因：%s" % (str(activity_id), activityName,activityType,startTimeLocal, str(e))    
