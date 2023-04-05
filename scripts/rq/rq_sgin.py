@@ -52,14 +52,15 @@ class RqSgin:
                 siginUrl,
                 headers=self.headers
             )
-            result = response.json()
+            result = response.json()         
+            message= response.json()
             ## 判断是否签到成功
             if result['status'] == 1:
                 notify.send("RQ签到任务", "签到成功！！！！")
             else:
                 ## 命令行输出签到信息
                 print(result)
-                notify.send(result)
+                notify.send("RQ签到结果",message)
             '''
                     feature:
                         未来会新增各种信息推送如 Email WebHook(企业微信、飞书等等)、Bark 等
