@@ -3,7 +3,7 @@ name: rq-sigin-sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '05 1,10 * * *'
+    - cron: '0 10,16 * * *'
 
 env:
   GITHUB_NAME: arthurfsy2
